@@ -1,6 +1,6 @@
 class Solution {
     public int[] getNoZeroIntegers(int n) {
-        int arr[]=new int[2];
+        //int arr[]=new int[2];
         for(int i=1;i<n;i++)
         {
             int j=n-i;
@@ -10,6 +10,6 @@ class Solution {
                 ///break;
             }
         }
-        return arr;
+        return new int[]{};
     }
 }
