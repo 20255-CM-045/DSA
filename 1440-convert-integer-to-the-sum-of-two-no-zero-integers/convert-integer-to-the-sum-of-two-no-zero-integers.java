@@ -4,12 +4,23 @@ class Solution {
         for(int i=1;i<n;i++)
         {
             int j=n-i;
-            if(!String.valueOf(i).contains("0")&&!String.valueOf(j).contains("0"))
+            if(Find(i)&&Find(j))
             {
                 return new int[]{i,j};
-                ///break;
             }
         }
         return new int[]{};
+    }
+    public static boolean Find(int n)
+    {
+        while(n>0)
+        {
+            if(n%10==0)
+            {
+               return false;
+            }
+            n=n/10;
+        }
+        return true;
     }
 }
