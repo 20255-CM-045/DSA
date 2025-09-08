@@ -6,9 +6,8 @@ class Solution {
             int j=n-i;
             if(!String.valueOf(i).contains("0")&&!String.valueOf(j).contains("0"))
             {
-                arr[0]=i;
-                arr[1]=j;
-                break;
+                return new int[]{i,j};
+                ///break;
             }
         }
         return arr;
